@@ -10,6 +10,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.image.*;
 import java.util.Random;
+import javafx.geometry.Pos;
 
 /**
  *
@@ -34,6 +35,9 @@ public class Lab02_HuyJamesVienHa extends Application {
         root.setBottom(bottomLabel);
         VBox middle = new VBox(lblImage);
         root.setCenter(middle);
+        root.setAlignment(topLabel, Pos.TOP_CENTER);
+        root.setAlignment(bottomLabel, Pos.BOTTOM_CENTER);
+        middle.setAlignment(Pos.CENTER);
         
         int random = new Random().nextInt(101, 120);
         Image image = new Image("file:" + System.getProperty("user.dir") + "//images//" + random + ".jpg");
