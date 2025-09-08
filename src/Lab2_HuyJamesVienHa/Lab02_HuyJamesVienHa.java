@@ -22,6 +22,10 @@ public class Lab02_HuyJamesVienHa extends Application {
         launch(args);
     }
     
+    /**
+     * creates a stage that generates a random image from a selection of 20
+     * @param primaryStage 
+     */
     @Override
     public void start(Stage primaryStage) {
         BorderPane root = new BorderPane();
